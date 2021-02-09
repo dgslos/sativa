@@ -363,7 +363,7 @@ class LeaveOneTest:
 #        else:        
 
         #create file with subtrees
-        rank_parent, rank_tips = get_parent_tip_ranks(self.tax_tree)
+        rank_parent, rank_tips = self.get_parent_tip_ranks(self.tax_tree)
 
         subtree_list = list(rank_tips.items())
         if len(subtree_list) == 0:
