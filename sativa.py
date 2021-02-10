@@ -385,7 +385,7 @@ class LeaveOneTest:
                 tax_path = subtree_list[subtree_count][0]
                 orig_ranks = Taxonomy.split_rank_uid(tax_path)
                 rank_level = Taxonomy.lowest_assigned_rank_level(orig_ranks)
-                rank_prefix = self.guess_rank_level_name(orig_ranks, rank_level)[0]
+                rank_prefix = TaxCode.guess_rank_level_name(orig_ranks, rank_level)[0]
                 rank_name = orig_ranks[rank_level]
                 if not rank_name.startswith(rank_prefix):
                     rank_name = rank_prefix + rank_name
